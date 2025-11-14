@@ -4,13 +4,168 @@
     
     <body>
     {%include 'recipes/partials/header.html'%}
-    <section class="search">
-        <div class="container">
-            <form action="" class="search-form">
-                <input type="text" class="search-input" name="search">
-                <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+    {%include 'recipes/partials/search.html'%}
+
+    <main>
+        <div class="main-content container">
+            <div class="recipe">
+                <div class="recipe-item-image">
+                    <img src="https://images.unsplash.com/photo-1667279601266-bd0e0a8202f2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"
+                        alt="">
+                </div>
+
+                <div class="recipe-body">
+                    <h2 class="recipe-title">Café da Bruma</h2>
+
+                    <div class="recipe-author">
+                        <span class="recipe-author-item">
+                            <i class="fas fa-user"></i>
+                            Mateus Salvador
+                        </span>
+                        <span class="recipe-author-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            14/11/2025 às 15:30
+                        </span>
+                    </div>
+
+                    <div class="recipe-content">
+                        <p>
+                            Uma experiência artesanal: café filtrado no coador, que ganha leveza e suavidade com uma delicada espuma. O resultado é uma bebida que combina tradição e inovação, trazendo notas intensas equilibradas por uma textura aveludada, como uma névoa que desperta os sentidos.
+                        </p>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-preparo">
+                        <h3 class="recipe-preparo-title"><i class="fas fa-stopwatch"></i> Preparo</h3>
+                        <div class="recipe-info-text">
+                            27 Minutos
+                        </div>
+                    </div>
+                    <div class="recipe-porcoes">
+                        <h3 class="recipe-porcoes-title"><i class="fas fa-pizza-slice"></i> Porções</h3>
+                        <div class="recipe-info-text">
+                            3 xícaras
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="recipe-footer">
+                    <a class="recipe-read-more button button-dark button-full-width" href="/recipes/3/">
+                        <i class="fas fa-eye"></i>
+                        <span>Ver mais...</span>
+                    </a>
+                </footer>
+            </div>
+
+
+
+
+            <div class="recipe">
+                <div class="recipe-item-image">
+                    <img src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwY29mZmVlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+                        alt="">
+                </div>
+
+                <div class="recipe-body">
+                    <h2 class="recipe-title">Doce Abraço</h2>
+
+                    <div class="recipe-author">
+                        <span class="recipe-author-item">
+                            <i class="fas fa-user"></i>
+                            Sandy Melory
+                        </span>
+                        <span class="recipe-author-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            30/09/2025 às 17:21
+                        </span>
+                    </div>
+
+                    <div class="recipe-content">
+                        <p>
+                            Um encontro irresistível entre café e chocolate. Servido em uma xícara envolta por uma casca de chocolate, cada gole mistura o amargor sofisticado do café com a doçura cremosa do cacau. Uma verdadeira tentação que transforma o simples ato de beber café em uma experiência única.
+                        </p>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-preparo">
+                        <h3 class="recipe-preparo-title"><i class="fas fa-stopwatch"></i> Preparo</h3>
+                        <div class="recipe-info-text">
+                            27 Minutos
+                        </div>
+                    </div>
+                    <div class="recipe-porcoes">
+                        <h3 class="recipe-porcoes-title"><i class="fas fa-pizza-slice"></i> Porções</h3>
+                        <div class="recipe-info-text">
+                            3 xícaras
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="recipe-footer">
+                    <a class="recipe-read-more button button-dark button-full-width" href="/recipes/3/">
+                        <i class="fas fa-eye"></i>
+                        <span>Ver mais...</span>
+                    </a>
+                </footer>
+            </div>
+
+
+
+            <div class="recipe">
+                <div class="recipe-item-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1674327105074-46dd8319164b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29mZmVlJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+                        alt="">
+                </div>
+
+                <div class="recipe-body">
+                    <h2 class="recipe-title">Cappuccino Clássico</h2>
+
+                    <div class="recipe-author">
+                        <span class="recipe-author-item">
+                            <i class="fas fa-user"></i>
+                            Mateus Salvador
+                        </span>
+                        <span class="recipe-author-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            10/11/2025 às 23:01
+                        </span>
+                    </div>
+
+                    <div class="recipe-content">
+                        <p>
+                            O clássico cappuccino em sua forma mais elegante: espresso encorpado, leite vaporizado e
+                            uma espuma cremosa que coroa a bebida. Finalizado com um toque de cacau em pó, é a
+                            escolha perfeita para quem busca aconchego e sofisticação em cada manhã.
+                        </p>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-preparo">
+                        <h3 class="recipe-preparo-title"><i class="fas fa-stopwatch"></i> Preparo</h3>
+                        <div class="recipe-info-text">
+                            27 Minutos
+                        </div>
+                    </div>
+                    <div class="recipe-porcoes">
+                        <h3 class="recipe-porcoes-title"><i class="fas fa-pizza-slice"></i> Porções</h3>
+                        <div class="recipe-info-text">
+                            3 xícaras
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="recipe-footer">
+                    <a class="recipe-read-more button button-dark button-full-width" href="/recipes/3/">
+                        <i class="fas fa-eye"></i>
+                        <span>Ver mais...</span>
+                    </a>
+                </footer>
+            </div>
+
         </div>
-    </section>
+
+    </main>
+
+    {%include 'recipes/partials/footer.html'%}
 </body>
 </html>
