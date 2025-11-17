@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Categoria
 class Categoria(models.Model):
@@ -39,3 +40,14 @@ class Livro(models.Model):
 
     def __str__(self):
         return f"{self.nome} ({self.editora})"
+
+class Compra(models.Model):
+
+    class StatusCompra(models.IntegerChoices):
+        CARRINHO = 1, "Carrinho"
+        REALIZADO = 2, "Realizado"
+        PAGO = 3, "Pago"
+        ENTREGUE = 4, "Entregue"
+
+    usuario = models.ForeignKey(User, on_delete=models.PROTECT, related_name="compras")
+    status = models.IntegerField(choices=StatusCompra.choices, default=StatusCompra.CARRINHO)
